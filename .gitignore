@@ -1,0 +1,5 @@
+# Ignore pywal files
+wal/
+
+# Ignore ncspot userstate.cbor file
+ncspot/userstate.cbor

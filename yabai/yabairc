@@ -1,0 +1,32 @@
+# bsp, stack, or float
+yabai -m config layout bsp
+
+# new window on right if vertical split, new window on bottom if horizontal split
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding 8
+yabai -m config bottom_padding 4
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 8
+
+# padding for status bar
+yabai -m config -m config external_bar main:32:0
+
+# mouse settings
+yabai -m config mouse_follow_focus on
+yabai -m config mouse_modifier alt
+
+# left click + drag
+yabai -m config mouse_action1 move
+
+# right click + drag 
+yabai -m config mouse_action2 resize
+
+# left click + drop
+yabai -m config mouse_drop_action swap
+
+# disable specific apps
+yabai -m rule --add app="OpenEmu$" manage=off
+# yabai -m rule --add app="^SystemSettings$" manage=off

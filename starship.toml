@@ -1,0 +1,177 @@
+format = "$all"
+add_newline = false
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "red"
+format = " [ $time]($style) "
+
+# nerd-font symbols and style:
+
+[aws]
+symbol = "  "
+style = "green"
+
+[buf]
+symbol = " "
+style = "green"
+
+[c]
+symbol = " "
+style = "green"
+
+[conda]
+symbol = " "
+style = "green"
+
+[dart]
+symbol = " "
+style = "green"
+
+[directory]
+read_only = " 󰌾"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[docker_context]
+symbol = " "
+style = "green"
+
+[elixir]
+symbol = " "
+style = "green"
+
+[elm]
+symbol = " "
+style = "green"
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+style = "green"
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+style = "green"
+
+[haxe]
+symbol = " "
+style = "green"
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+style = "green"
+
+[julia]
+symbol = " "
+style = "green"
+
+[lua]
+symbol = " "
+style = "green"
+
+[memory_usage]
+symbol = "󰍛 "
+style = "green"
+
+[meson]
+symbol = "󰔷 "
+style = "green"
+
+[nim]
+symbol = "󰆥 "
+style = "green"
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+style = "green"
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+style = "green"
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+style = "green"
+
+[rlang]
+symbol = "󰟔 "
+style = "green"
+
+[ruby]
+symbol = " "
+style = "green"
+
+[rust]
+symbol = " "
+style = "green"
+
+[scala]
+symbol = " "
+style = "green"
