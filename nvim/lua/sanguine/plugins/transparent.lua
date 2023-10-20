@@ -5,6 +5,7 @@ return {
     local transparent = require("transparent")
 
     transparent.clear_prefix("BufferLine")
+    transparent.clear_prefix("Lazy")
     transparent.clear_prefix("NvimTree")
 
     transparent.setup({
@@ -17,7 +18,10 @@ return {
         "Pmenu",
         "CmpItemKind",
         "CmpItemAbbr",
-        "CmpItemAbbrMatch"
+        "CmpItemAbbrMatch",
+        "lualine_a_inactive",
+        "lualine_b_inactive",
+        "lualine_c_inactive"
       },
     })
 
