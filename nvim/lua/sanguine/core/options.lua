@@ -1,5 +1,4 @@
---options
-
+-- options:
 
 -- colorscheme
 -- vim.opt.termguicolors = true
