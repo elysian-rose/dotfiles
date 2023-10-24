@@ -7,7 +7,6 @@ return {
 
     bufferline.setup({
       options = {
-        indicator = { style = 'underline' },
         -- shift bufferline when nvim-tree is open
         offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
       }
