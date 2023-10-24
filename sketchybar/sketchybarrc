@@ -7,13 +7,14 @@ ITEM_DIR="$DIR/items"
 FONT="Mononoki Nerd Font"
 ICON_FONT="Mononoki Nerd Font"
 
-PADDING=3
+PADDING=4
 
+source "$DIR/colors.sh"
 source "$DIR/icons.sh"
 
 BAR_PROPS=(
   height=30
-  color=0xcc000000
+  color=$BG_COLOR
   shadow=on
   position=top
   y_offset=4
@@ -24,20 +25,21 @@ BAR_PROPS=(
 
 DEF_PROPS=(
   icon.font="$ICON_FONT:Regular:18.0"
-  icon.color=0xffffffff
+  icon.color=$TEXT_COLOR
   icon.padding_left=$PADDING
   icon.padding_right=$PADDING
-  label.font="$FONT:Semibold:13.0"
-  label.color=0xffffffff
+  label.font="$FONT:Bold:13.0"
+  label.color=$TEXT_COLOR
   label.padding_left=$PADDING
   label.padding_right=$PADDING
+  background.color=$BG_COLOR
   background.padding_right=$PADDING
   background.padding_left=$PADDING
-  backgorund.corner_radius=9
+  background.corner_radius=9
   popup.background.border_width=2
   popup.background.corner_radius=11
   popup.background.border_color=0xffffffff
-  popup.background.color=0xcc000000
+  popup.background.color=0x00000000
   popup.background.shadow.drawing=on
 )
 
@@ -45,36 +47,11 @@ sketchybar --bar "${BAR_PROPS[@]}"
 sketchybar --default "${DEF_PROPS[@]}"
 
 source $ITEM_DIR/apple.sh
-source $ITEM_DIR/battery.sh
+source $ITEM_DIR/spaces.sh
+source $ITEM_DIR/focus.sh
+
 source $ITEM_DIR/time.sh
+source $ITEM_DIR/battery.sh
 source $ITEM_DIR/volume.sh
-
-SPACE_ICONS=("1" "2" "3" "4") 
-
-for i in "${!SPACE_ICONS[@]}"
-do
-  sid=$(($i+1))
-  sketchybar --add space space.$sid left                                 \
-             --set space.$sid space=$sid                                 \
-                              icon=${SPACE_ICONS[i]}                     \
-                              background.color=0x44ffffff                \
-                              background.corner_radius=5                 \
-                              background.height=20                       \
-                              background.drawing=off                     \
-                              label.drawing=off                          \
-                              script="$PLUGIN_DIR/space.sh"              \
-                              click_script="yabai -m space --focus $sid"
-done
-
-sketchybar --add item space_separator left                         \
-           --set space_separator icon=                            \
-                                 padding_left=10                   \
-                                 padding_right=10                  \
-                                 label.drawing=off                 \
-                                                                   \
-           --add item front_app left                               \
-           --set front_app       script="$PLUGIN_DIR/front_app.sh" \
-                                 icon.drawing=off                  \
-           --subscribe front_app front_app_switched
 
 sketchybar --update
