@@ -5,6 +5,7 @@ return {
     local transparent = require("transparent")
 
     transparent.clear_prefix("BufferLine")
+    transparent.clear_prefix("@ibl")
     transparent.clear_prefix("Lazy")
     transparent.clear_prefix("NvimTree")
 
@@ -14,7 +15,6 @@ return {
         "NormalFloat",
         "TelescopeNormal",
         "TelescopeBorder",
-        "IndentBlankLineChar",
         "Pmenu",
         "CmpItemKind",
         "CmpItemAbbr",
