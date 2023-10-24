@@ -13,6 +13,7 @@ return {
       extra_groups = {
         "MsgArea",
         "NormalFloat",
+        "FloatBorder",
         "TelescopeNormal",
         "TelescopeBorder",
         "Pmenu",
