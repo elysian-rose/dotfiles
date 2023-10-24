@@ -10,7 +10,7 @@ return {
     lualine.setup({
       options = {
         theme = custom_pywal,
-        disabled_filetypes = { "Lazy", "NvimTree" },
+        disabled_filetypes = { "Lazy" },
       },
       sections = {
         lualine_y = {
@@ -26,6 +26,7 @@ return {
           "location",
         },
       },
+      extensions = { "nvim-tree" }
     })
   end,
 }
