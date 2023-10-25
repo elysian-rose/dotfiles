@@ -1,14 +1,16 @@
-export APPLE_ICON=
+export APPLE_ICON=󰀵
 
-export WIFI_DISCONN_ICON=󰖩
-export WIFI_CONN_ICON=󰖪
+export SEPERATOR_ICON=󰅂
 
-export BATTERY_BOLT_ICON=󱐋
-export BATTERY_100_ICON=
-export BATTERY_75_ICON=
-export BATTERY_50_ICON=
-export BATTERY_25_ICON=
-export BATTERY_0_ICON=
+export WIFI_DISCONN_ICON=󰖪
+export WIFI_CONN_ICON=󰖩
+
+export BATTERY_BOLT_ICON=󰂄
+export BATTERY_100_ICON=󱊣
+export BATTERY_75_ICON=󱊣
+export BATTERY_50_ICON=󱊢
+export BATTERY_25_ICON=󱊡
+export BATTERY_0_ICON=󰂎
 
 export SOUND_FUL_ICON=󰕾
 export SOUND_HIG_ICON=󰕾
