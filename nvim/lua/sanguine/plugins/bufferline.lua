@@ -9,7 +9,7 @@ return {
       options = {
         -- shift bufferline when nvim-tree is open
         offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
-        indicator = { style = "underline" }
+        indicator = { style = "none" }
       }
     })
 
