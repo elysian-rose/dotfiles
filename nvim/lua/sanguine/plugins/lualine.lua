@@ -3,13 +3,9 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     local lualine = require("lualine")
-    -- transparency
-    local custom_pywal = require("lualine.themes.pywal")
-    custom_pywal.normal.c.bg = "None"
 
     lualine.setup({
       options = {
-        theme = custom_pywal,
         disabled_filetypes = { "Lazy" },
       },
       sections = {
