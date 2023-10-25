@@ -1,5 +1,5 @@
 export FOREGROUND="0xffe0def4"
-export BACKGROUND="0x99191724"
+export BACKGROUND="0x66191724"
 
 export BLACK="0xff26233a"
 export RED="0xffeb6f92"
