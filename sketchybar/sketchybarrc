@@ -13,11 +13,11 @@ source "$DIR/colors.sh"
 source "$DIR/icons.sh"
 
 BAR_PROPS=(
-  height=34
+  height=30
   color=$BACKGROUND
   shadow=off
   position=top
-  y_offset=6
+  y_offset=4
   margin=12
   corner_radius=8
   sticky=on

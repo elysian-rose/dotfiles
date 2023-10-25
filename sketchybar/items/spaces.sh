@@ -2,18 +2,22 @@
 
 SPACE_ICONS=("1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15")
 
+# Destroy space on right click, focus space on left click.
+# New space by left clicking separator (>)
+SPACE_CLICK_SCRIPT='[ "$BUTTON" = "right" ] && (yabai -m space --destroy $SID; sketchybar --trigger space_change) || yabai -m space --focus $SID 2>/dev/null'
+
 SPACE=(
-  icon.padding_left=22
-  icon.padding_right=22
-  label.padding_right=33
-  icon.color=$TEXT_COLOR
+  icon.padding_left=20
+  icon.padding_right=20
+  icon.color=$MAGENTA
   icon.font="$FONT:Bold:13.0"
-  icon.highlight_color=$ALT_TEXT_COLOR
-  background.drawing=off
+  icon.highlight_color=$RED
   background.padding_left=-8
   background.padding_right=-8
+  background.drawing=off
   label.drawing=off
   script="$PLUGIN_DIR/spaces.sh"
+  click_script="$SPACE_CLICK_SCRIPT"
 )
 
 sid=0
