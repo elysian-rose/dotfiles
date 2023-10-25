@@ -1,3 +1,10 @@
 [keybindings]
 "Shift+j" = "move down 5"
 "Shift+k" = "move up 5"
+
+[theme]
+title = "magenta"
+playing = "magenta"
+highlight_bg = "green"
+statusbar_progress = "green"
+statusbar = "magenta"
