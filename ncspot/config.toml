@@ -3,8 +3,12 @@
 "Shift+k" = "move up 5"
 
 [theme]
+secondary = "magenta"
 title = "magenta"
 playing = "magenta"
+playing_selected = "magenta"
 highlight_bg = "black"
 statusbar_progress = "black"
 statusbar = "magenta"
+cmdline = "magenta"
+cmdline_bg = "black"
