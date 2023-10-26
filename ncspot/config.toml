@@ -5,6 +5,6 @@
 [theme]
 title = "magenta"
 playing = "magenta"
-highlight_bg = "green"
-statusbar_progress = "green"
+highlight_bg = "black"
+statusbar_progress = "black"
 statusbar = "magenta"
