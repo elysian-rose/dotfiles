@@ -7,9 +7,8 @@ export WIFI_CONN_ICON=󰖩
 
 export BATTERY_BOLT_ICON=󰂄
 export BATTERY_100_ICON=󱊣
-export BATTERY_75_ICON=󱊣
-export BATTERY_50_ICON=󱊢
-export BATTERY_25_ICON=󱊡
+export BATTERY_67_ICON=󱊢
+export BATTERY_33_ICON=󱊡
 export BATTERY_0_ICON=󰂎
 
 export SOUND_FUL_ICON=󰕾

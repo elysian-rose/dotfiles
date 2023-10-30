@@ -8,11 +8,11 @@ if [ $PERCENTAGE = "" ]; then
 fi
 
 case ${PERCENTAGE} in
-  9[0-9]|100) ICON="$BATTERY_100_ICON" ;;
-  [6-8][0-9]) ICON="$BATTERY_75_ICON" ;;
-  [3-5][0-9]) ICON="$BATTERY_50_ICON" ;;
-  [1-2][0-9]) ICON="$BATTERY_25_ICON" ;;
-  *) ICON="$BATTERY_0_ICON"
+  [8-9][0-9]|100) ICON="$BATTERY_100_ICON" ;;
+  [5-7][0-9]) ICON="$BATTERY_67_ICON" ;;
+  [2-4][0-9]) ICON="$BATTERY_33_ICON" ;;
+  [0-9]|1[0-9]) ICON="$BATTERY_0_ICON" ;;
+  *) ICON="$BATTERY_BOLT_ICON"
 esac
 
 if [[ $CHARGING != "" ]]; then
