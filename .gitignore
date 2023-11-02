@@ -3,3 +3,6 @@ wal/
 
 # Ignore ncspot userstate.cbor file
 ncspot/userstate.cbor
+
+# Ignore lazy-lock.json file
+nvim/lazy-lock.json
