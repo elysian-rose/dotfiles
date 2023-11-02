@@ -1,3 +1,6 @@
+# Ignore spotifyd files
+spotifyd/
+
 # Ignore pywal files
 wal/
 
