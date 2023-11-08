@@ -93,13 +93,13 @@ return {
       },
     })
 
-    -- config python
+    -- config python lsp
     lspconfig["pyright"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- config rust
+    -- config rust lsp
     lspconfig["rust_analyzer"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
