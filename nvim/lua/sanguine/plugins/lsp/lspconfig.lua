@@ -66,17 +66,17 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
-    -- config html
+    -- config html lsp
     lspconfig["html"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
-    -- config lua
+    -- config lua lsp
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      settings = { -- custom settings for lua
+      settings = { -- custom settings for lua lsp
         Lua = {
           -- make the language server recognize "vim" global
           diagnostics = {
@@ -97,7 +97,12 @@ return {
     lspconfig["pyright"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+    })
 
+    -- config rust
+    lspconfig["rust_analyzer"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
     })
   end,
 }

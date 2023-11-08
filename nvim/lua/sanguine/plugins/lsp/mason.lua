@@ -26,6 +26,7 @@ return {
         "html",
         "lua_ls",
         "pyright",
+        "rust_analyzer",
       },
 
       automatic_installation = true,
