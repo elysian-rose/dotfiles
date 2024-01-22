@@ -9,14 +9,14 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding
-yabai -m config top_padding 6
-yabai -m config bottom_padding 6
-yabai -m config left_padding 12
-yabai -m config right_padding 12
-yabai -m config window_gap 6
+yabai -m config top_padding 4
+yabai -m config bottom_padding 4
+yabai -m config left_padding 4
+yabai -m config right_padding 4
+yabai -m config window_gap 4
 
 # padding for status bar
-yabai -m config -m config external_bar main:34:0
+# yabai -m config -m config external_bar main:34:0
 
 # mouse settings
 yabai -m config mouse_follow_focus on
@@ -32,5 +32,6 @@ yabai -m config mouse_action2 resize
 yabai -m config mouse_drop_action swap
 
 # disable specific apps
+yabai -m rule --add app="Calculator$" manage=off
 yabai -m rule --add app="OpenEmu$" manage=off
 # yabai -m rule --add app="^SystemSettings$" manage=off
