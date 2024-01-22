@@ -2,6 +2,7 @@
 
 # alt + return opens kitty in ~ directory
 alt - return : /Users/sanguine/Applications/kitty.app/Contents/MacOS/kitty -d ~
+shift + alt - return : /Users/sanguine/Applications/Firefox.app/COntents/MacOS/firefox
 
 
 # yabai:
