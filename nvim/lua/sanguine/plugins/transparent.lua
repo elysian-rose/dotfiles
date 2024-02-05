@@ -1,4 +1,5 @@
-return {
+return {}
+--[[ return {
   "xiyaowong/transparent.nvim",
   priority = 999, -- load before all plugins except pywal
   config = function()
@@ -35,4 +36,4 @@ return {
     -- )
 
   end,
-}
+} --]]

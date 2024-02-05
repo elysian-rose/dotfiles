@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/duskfox.toml"
+    "~/.config/alacritty/catppuccin-mocha.toml"
 ]
 
 live_config_reload = true
@@ -13,4 +13,4 @@ normal = { family = "CaskaydiaCove Nerd Font Mono", style = "Regular" }
 
 [window]
 decorations = "none"
-opacity = 0.75
+opacity = 0.5
