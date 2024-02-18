@@ -6,7 +6,6 @@ return {
 
     lualine.setup({
       options = {
-        theme = "catppuccin",
         disabled_filetypes = { "Lazy" },
       },
       sections = {
