@@ -1,7 +1,7 @@
 # general binds:
 
 # alt + return opens kitty in ~ directory
-alt - return : /Users/sanguine/Applications/Alacritty.app/Contents/MacOS/alacritty
+alt - return : /Users/sanguine/Applications/iTerm.app/Contents/MacOS/iTerm2
 
 # yabai:
 
