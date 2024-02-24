@@ -8,8 +8,8 @@ return {
     bufferline.setup({
       options = {
         -- shift bufferline when nvim-tree is open
-        offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
-        indicator = { style = "none" }
+        offsets = { { filetype = "NvimTree", text = "", padding = 0 } },
+        indicator = { style = "none" },
       },
     })
 
