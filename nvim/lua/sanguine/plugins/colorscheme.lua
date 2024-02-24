@@ -1,12 +1,12 @@
 return {
-  "sainnhe/sonokai",
-  name = "sonokai",
+  "catppuccin/nvim",
+  name = "catppuccin",
   priority = 1000, -- load before other plugins
   config = function()
+    local catppuccin = require("catppuccin")
+    catppuccin.setup({})
     -- load colorsheme
-    vim.g.sonokai_style = "shusia"
-    vim.g.sonokai_better_performance = 1
-    vim.cmd.set "termguicolors"
-    vim.cmd.colorscheme "sonokai"
+    -- vim.cmd.set "termguicolors"
+    vim.cmd.colorscheme "catppuccin"
   end,
 }
