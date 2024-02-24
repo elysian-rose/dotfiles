@@ -1,14 +1,12 @@
 return {
-  "folke/tokyonight.nvim",
-  name = "tokyonight",
+  "sainnhe/sonokai",
+  name = "sonokai",
   priority = 1000, -- load before other plugins
   config = function()
-    local tokyonight = require("tokyonight")
-    tokyonight.setup({
-      style = "moon",
-      transparent = "true",
-    })
     -- load colorsheme
-    vim.cmd.colorscheme "tokyonight"
+    vim.g.sonokai_style = "shusia"
+    vim.g.sonokai_better_performance = 1
+    vim.cmd.set "termguicolors"
+    vim.cmd.colorscheme "sonokai"
   end,
 }
