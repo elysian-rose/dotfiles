@@ -1,5 +1,5 @@
 import = [
-  "~/.config/alacritty/tokyonight_moon.toml"
+  "~/.config/alacritty/nightfox.toml"
 ]
 
 live_config_reload = true
@@ -13,4 +13,4 @@ normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 
 [window]
 decorations = "none"
-opacity = 0.5
+opacity = 1.0
